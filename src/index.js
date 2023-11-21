@@ -21,6 +21,7 @@ function chooseBreed(data) {
       });
 
       breedSelectEl.insertAdjacentHTML('beforeend', optionsMarkup);
+      breedSelectEl.classList.remove('is-hidden'); // Show select element after options are added
     })
     .catch(onError);
 }
