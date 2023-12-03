@@ -1,4 +1,6 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
+import SlimSelect from 'slim-select';
+import 'slim-select/dist/slimselect.css';
 
 ////////////////////////////////////////////////////////////
 
@@ -21,6 +23,9 @@ function chooseBreed(data) {
       });
 
       breedSelectEl.insertAdjacentHTML('beforeend', optionsMarkup);
+      new SlimSelect({
+        select: breedSelectEl,
+      });
       breedSelectEl.classList.remove('is-hidden'); // Show select element after options are added
     })
     .catch(onError);
