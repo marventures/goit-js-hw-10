@@ -1,5 +1,4 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
-import 'slim-select/dist/slimselect.css';
 
 ////////////////////////////////////////////////////////////
 
